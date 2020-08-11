@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        text-align: center;
+
+    }
+    #parent{
+        position: relative;
+        background-color: aliceblue;
+        width: 30vh;
+        height: 50vh;
+        border: 1px solid;
+        margin: auto;
+        overflow: hidden;
+        transition-duration: 1s;
+    }
+    #child{
+        position: relative;
+        background-color: red;
+        width: 150vh;
+        height: 50vh;
+        transition-duration: 1s;
+
+    }
+    #child img{
+        position: relative;
+        width: 30vh;
+        height: 50vh;
+        float: left;
+        transition-duration: 2s;
+    }
+</style>
+<body>
+    <div id="parent">
+        <div id="child">
+            <img src="hotel_otter.jpg" id="img1" alt="">
+            <img src="hotel_contempo.jpg" alt="" id="img2">
+            <img src="background_buildings.png" alt="" id="img3">
+            <img src="hotel_rage.jpg" alt="" id="img4">
+            <img src="iphone_roux.png" alt="" id="img5">
+        </div>
+    </div>
+    <button onclick="img1()">1</button>
+    <button onclick="img2()">2</button>
+    <button onclick="img3()">3</button>
+    <button onclick="img4()">4</button>
+    <button onclick="img5()">5</button>
+</body>
+<script>
+    function img1(){
+        // document.getElementsByTagName("img")[0,1,2,3,4].style.left="0%"
+        document.getElementById("img1").style.left="0%"
+        document.getElementById("img2").style.left="0%"
+        document.getElementById("img3").style.left="0%"
+        document.getElementById("img4").style.left="0%"
+        document.getElementById("img5").style.left="0%"
+    }
+    function img2(){
+        document.getElementById("img1").style.left="-20%"
+        document.getElementById("img2").style.left="-20%";
+        document.getElementById("img3").style.left="-20%";
+        document.getElementById("img4").style.left="-20%";
+        document.getElementById("img5").style.left="-20%";
+    }
+    function img3(){
+        document.getElementById("img1").style.left="-40%"
+        document.getElementById("img2").style.left="-40%"
+        document.getElementById("img3").style.left="-40%"
+        document.getElementById("img4").style.left="-40%"
+        document.getElementById("img5").style.left="-40%"
+    }
+    function img4(){
+        document.getElementById("img1").style.left="-60%"
+        document.getElementById("img2").style.left="-60%"
+        document.getElementById("img3").style.left="-60%"
+        document.getElementById("img4").style.left="-60%"
+        document.getElementById("img5").style.left="-60%"
+    }
+    function img5(){
+        document.getElementById("img1").style.left="-80%"
+        document.getElementById("img2").style.left="-80%"
+        document.getElementById("img3").style.left="-80%"
+        document.getElementById("img4").style.left="-80%"
+        document.getElementById("img5").style.left="-80%"
+    }
+</script>
+</html>
